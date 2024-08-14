@@ -40,3 +40,4 @@ services:
     volumes:
       - ./src:/var/www/laravel
     entrypoint: ["php", "artisan"]
+
