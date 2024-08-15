@@ -103,41 +103,17 @@
                             </a>
                             <ul class="navbar-nav navbar-mobile justify-content-md-center w-100">
                                 <li class="nav-item dropdown fadeup">
-                                    <a class="nav-link" href="/">Home</a>
+                                    <a class="nav-link" href="{{route('home')}}">Home</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('portfolio')}}">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About Us</a></li>
+                                <li class="nav-item dropdown fadeup">
+                                    <a class="nav-link" href="{{route('services')}}">Services </a>
                                 </li>
                                 <li class="nav-item dropdown fadeup">
-                                    <a class="nav-link" href="#">Pages <i class="ti-plus"></i></a>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="shop-details.html">Shop Single</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="register.html">Register Page</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="login.html">Login Page</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="gallery.html">Projects</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="project-single.html">Project Single</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faq.html">Faq</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
+                                    <a class="nav-link" href="{{route('blog')}}">Blog</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="nav-item dropdown fadeup">
-                                    <a class="nav-link" href="#">Services <i class="ti-plus"></i></a>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Single</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown fadeup">
-                                    <a class="nav-link" href="#">Blog <i class="ti-plus"></i></a>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-standard.html">Blog Standard</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
                             </ul>
                             <div class="search-cart nav-profile">
                                 <a href="contact.html" class="btn-1 btn-sm">Let's Begin</a>
