@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
-
+@section('title')
+    Hom page
+@endsection
 @section('content')
     @include('frontend.sections.homeSlider')
     @include('frontend.sections.homeAbout')

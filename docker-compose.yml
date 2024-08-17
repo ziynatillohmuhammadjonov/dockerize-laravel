@@ -10,8 +10,10 @@ services:
     depends_on:
       - php
       - mysql
+      - phpmyadmin
+
   php:
-    build: 
+    build:
       context: dockerfiles
       dockerfile: php.Dockerfile
     volumes:
@@ -27,17 +29,26 @@ services:
       - ./env/mysql.env
 
   composer:
-    build: 
+    build:
       context: dockerfiles
       dockerfile: composer.Dockerfile
     volumes:
       - ./src:/var/www/laravel
 
   artisan:
-    build: 
+    build:
       context: dockerfiles
       dockerfile: php.Dockerfile
     volumes:
       - ./src:/var/www/laravel
     entrypoint: ["php", "artisan"]
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    depends_on:
+      - mysql
