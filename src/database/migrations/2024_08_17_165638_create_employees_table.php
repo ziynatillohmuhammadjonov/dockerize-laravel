@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string('phone_number')->unique();
             $table->string('telegram_link')->unique();
             $table->string('whatsapp_link')->unique();
-            $table->text('body')->nullable();
+            $table->text('body_uz')->nullable();
+            $table->text('body_ru')->nullable();
+            $table->text('body_en')->nullable();
             $table->timestamps();
         });
     }

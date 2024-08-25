@@ -1,0 +1,13 @@
+@extends('layouts.admin')
+@section('header')
+    @include('admin.includes.header')
+@endsection
+@section('sidebar')
+    @include('admin.sections.sidebar')
+@endsection
+@section('content')
+    @yield('content')
+@endsection
+@section('footer')
+    @include('admin.includes.footer')
+@endsection
